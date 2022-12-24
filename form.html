@@ -1,0 +1,114 @@
+<!--
+    . action in form indicates where the data of form will go after submission
+    . method will tell data will go via get method which is insecure or will go via post method which is more secure, by default it is get method.
+    . if same name is not given in case of radio buttons then multiple things can be selected 
+    . size in select tag is used to show minimum these options, multiple is used for selecting multiple options 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML FORM</title>
+    <style>
+      .heading {
+        font-size: 50px;
+        color: black;
+        text-align: center;
+        text-decoration: underline;
+      }
+      body {
+        font-size: 25px;
+        line-height: 50px;
+        background: grey;
+      }
+      #registerform {
+        margin: auto;
+        border: 1px solid black;
+        padding: 25px;
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Form</h1>
+    <form action="register.jsp" method="post">
+      <table id="registerform">
+        <tr>
+          <td>Enter name:</td>
+          <td>
+            <input
+              type="text"
+              placeholder="Enter Name"
+              name="user_name"
+              value="Vidur Agarwal"
+              readonly
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Enter Password:</td>
+          <td>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="user_password"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Select DOB</td>
+          <td>
+            <input type="date" name="dob" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Select Gender</td>
+          <td>
+            <input type="radio" name="gender" />Male
+            <input type="radio" name="gender" />Female
+            <input type="radio" name="gender" />Other
+          </td>
+        </tr>
+        <tr>
+          <td>Select Courses:</td>
+          <td>
+            <select name="courses" size="2" multiple>
+              <option value="java">Java</option>
+              <option value="Python">Python</option>
+              <option value="CPP">C++</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right">
+            <input type="checkbox" />
+          </td>
+          <td>Accept Terms and Conditions</td>
+        </tr>
+        <tr>
+          <td>Enter address</td>
+          <td>
+            <textarea
+              placeholder="Address"
+              name="address"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" />
+            <input type="reset" />
+          </td>
+        </tr>
+      </table>
+
+      <br />
+    </form>
+  </body>
+</html>
