@@ -1,0 +1,112 @@
+<!-- 
+  .<> </>These are container tags that is they can contain information inside them along with other tags
+  .Attributes provide additional information about tags, they exist in name and value pair. They come at start of a tag. example color of h1.
+  .To move from one page to another we use hyperlinks with the help of anchor tags.
+  .title tag in img is used to tell the title of image when cursor is hovered on the image 
+  .Button can be of three types submit reset and button. submit is used to submit the form. reset is  used to reset the form and button is used to use it as casual button.
+  .list two types:-ordered list and unordered list.
+-->
+<html>
+  <head>
+    <title>Learning HTML</title>
+    <style>
+      li {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body style="padding-left: 20px">
+    <h1 style="color: red; text-align: center">First Heading.</h1>
+    <hr />
+    <a href="Secondfile.html" target="_blank">SecondHtml File</a>
+    <br />
+    <img
+      style="height: 300px; width: 300px; border-radius: 50px"
+      src="images/vidur.jpeg"
+      title="Vidur Agarwal"
+      alt="image not avaialble"
+    />
+    <br />
+    <br />
+
+    <button style="color: aqua; border-radius: 50px; font-size: 30px">
+      Submit
+    </button>
+
+    <hr />
+    <ul style="list-style-type: square">
+      <li>First Point</li>
+      <li>Second Point</li>
+      <li>Third Point</li>
+    </ul>
+
+    <hr />
+
+    <ol type="i">
+      <li>First Point</li>
+      <li>Second Point</li>
+      <li>Third Point</li>
+    </ol>
+    <br />
+    <br />
+    <h1>
+      <b>Bold Tag</b>
+      <br />
+      <strong>Strong tag</strong>
+      <br />
+      <i>Italic tag</i>
+      <br />
+      2<sub>subscript</sub>
+      <br />
+      2<sup>superscript</sup>
+      <br />
+      Normal line to <em>emphasize</em> and <del>delete</del> tags are used
+    </h1>
+    <hr />
+    <br />
+    <br />
+    <table border="1px" style="font-size: 50px">
+      <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+      </tr>
+      <tr>
+        <td>Vidur</td>
+        <td>Agarwal</td>
+      </tr>
+
+      <tr>
+        <td>Ravi</td>
+        <td>Shastri</td>
+      </tr>
+    </table>
+    <hr />
+    <br />
+    <video controls style="height: 300" autoplay>
+      <source src="videos/learning.mp4" type="video/mp4" />
+    </video>
+    <hr />
+    <br />
+    <br />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/K4evu-L0teQ"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <br />
+    <hr />
+    <iframe
+      src="Secondfile.html"
+      width="500"
+      height="500"
+      frameborder=""
+      0
+    ></iframe>
+    <hr />
+  </body>
+</html>
